@@ -1,0 +1,19 @@
+{
+  "name": "memory-pass",
+  "version": "1.0.0",
+  "description": "Application de memorisation de mot de passe",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ProMetium",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^16.0.8"
+  },
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "material-icon": "^0.1.4"
+  }
+}
