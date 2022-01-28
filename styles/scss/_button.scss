@@ -1,0 +1,65 @@
+// -------------Bouton d'ajout d'une fiche ------------
+#btn_add{
+    @include button();
+    width: 95px;
+    height: 28px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    
+    i{
+        float: left;
+        margin-left: 6px;
+        margin-top: -2px;
+    }
+}
+#btn_add:hover{
+    background: $blue-dark;
+}
+#btn_add:active{
+    background: $blue-dark;
+    box-shadow:2px 2px 2px rgba(0, 0, 0, 0.40) inset; 
+}
+
+
+// -----------------Groupe de bouton edit et del-----------
+#group_btn{
+    margin-top:30px;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    #btn_edit{
+
+        @include button();
+        width: 140px;
+        margin-bottom: 20px;
+        i{
+            float: left;
+            margin-left: 6px;
+            margin-top: -2px;
+        }
+    }
+    #btn_del{
+        @include button();
+        width: 140px;
+        i{
+            float: left;
+            margin-left: 6px;
+            margin-top: -2px;
+        }
+    }
+    #btn_del:hover{
+        background: $blue-dark; 
+    }
+    #btn_del:active{
+        background: $blue-dark;
+        box-shadow:2px 2px 2px rgba(0, 0, 0, 0.40) inset; 
+    }
+    #btn_edit:hover{
+        background: $blue-dark; 
+    }
+    #btn_edit:active{
+        background: $blue-dark;
+        box-shadow:2px 2px 2px rgba(0, 0, 0, 0.40) inset; 
+    }
+}
