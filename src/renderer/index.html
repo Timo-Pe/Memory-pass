@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Electron</title>
+	<!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+	<meta http-equiv="Content-Security-Policy"
+		content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'" />
+
+	<link href="./assets/styles.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__title">
+			<h1>Memory-Pass</h1>
+		</div>
+		<div class="actionBar">
+			<div class="actionBar__button">
+				<div class="actionBar__button-circle">
+					<i></i>
+				</div>
+				<span class="actionBar__button-actionName">Add new</span>
+			</div>
+			<div class="actionBar__button">
+				<div class="actionBar__button-circle">
+					<i></i>
+				</div>
+				<span class="actionBar__button-actionName">Add new</span>
+			</div>
+			<div class="actionBar__button">
+				<div class="actionBar__button-circle">
+					<i></i>
+				</div>
+				<span class="actionBar__button-actionName">Add new</span>
+			</div>
+			<div class="actionBar__button">
+				<div class="actionBar__button-circle">
+					<i></i>
+				</div>
+				<span class="actionBar__button-actionName">Add new</span>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section id="Actions">
+			<div class="listNames">
+				<div class="listNames__container">
+					<div class="listNames__container-selectedZone"></div>
+					<ul class="listNames__container-list">
+						<li>Google</li>
+						<li>Google</li>
+						<li>Google</li>
+						<li>Google</li>
+						<li>Google</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section id="Informations">
+			<div class="informationsCard">
+				<h3 class="informationsCard__labelInfo">Nom complet</h3>
+				<span id="data-sitename"></span>
+				<h3 class="informationsCard__labelInfo">Nom d'utilisateur ou adress mail</h3>
+				<span id="space-username"></span>
+				<h3 class="informationsCard__labelInfo">Mot de passe</h3>
+				<span id="space-password"></span>
+				<h3 class="informationsCard__labelInfo">Commentaire</h3>
+				<span id="space-commentaire"></span>
+			</div>
+			<!-- <div id="modal-form">
+				<a href=""><i id="clear" class="material-icons">clear</i></a>
+				<form id='form' action="">
+					<h3>Nom complet</h3>
+					<input id='input_name' type="text">
+					<h3>Nom d'utilisateur / Adresse email</h3>
+					<input id='input_mail' type="mail" name="" id="">
+					<h3>Mot de passe</h3>
+					<input id='input_pass' type="password">
+					<h3>Commentaire</h3>
+					<textarea id='textarea_com' name="commentaire" id="" cols="30" rows="10"></textarea>
+					<button id='btnAddModal' type="submit">Ajouter</button>
+					<button id='btnEditModal' type="submit">Modifier</button>
+				</form>
+			</div> -->
+
+			<div id="card-divers" class="element-disabled">
+				<h3>Nom complet</h3>
+				<span id="space-sitename"></span>
+				<h3>Nom d'utilisateur ou adress mail</h3>
+				<span id="space-username"></span>
+				<h3>Mot de passe</h3>
+				<span id="space-password"></span>
+				<H3>Commentaire</H3>
+				<span id="space-commentaire"></span>
+			</div>
+			<div id="group_btn" class="element-disabled">
+				<a id="btn_edit" href=" "><i class="material-icons">mode_edit</i>Editer</a>
+				<a id="btn_del" href=" "><i class="material-icons">clear</i>Supprimer</a>
+			</div>
+
+		
+
+		</section>
+	</main>>
+	<!-- <script src="ModuleJs/infoBox.js"></script>
+    <script src="ModuleJs/editCard.js"></script>
+    <script src="ModuleJs/displayContent.js"></script>
+    <script src="ModuleJs/displayModal.js"></script>
+  
+    <script src="ModuleJs/displayCard.js"></script>
+    <script src="ModuleJs/dataWork.js"></script>
+    <script src="ModuleJs/app.js"></script> -->
+	<script type="module" src="./src/modules/counter.ts"></script>
+	<script type="module" src="./src/renderer.ts"></script>
+</body>
+
+</html>

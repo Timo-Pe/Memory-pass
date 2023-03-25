@@ -1,0 +1,42 @@
+// ----------Header----------------------
+header{
+    background-color: #1b3256;
+    height: 125px;
+    width: 100%;
+    margin-top:-30px;
+        .title
+        {
+            color:#fff;
+            font-weight: bold;
+            position: absolute;
+            display: block;
+            margin:30px;
+            left:100px;
+        }
+        #info_card{
+            display: block;
+            position: absolute;
+            right: -330px;
+            top:20px;
+            height: 20px;
+            width: 300px;
+            padding:10px;
+            border-radius:5px 0px 0px 5px;
+            box-shadow: -1px 3px 4px $blue-normal;
+            transition: right 0.5s;
+        }
+        
+       
+}
+#info_card.orange{
+    right: 0px;
+    background-color: orange;
+}
+#info_card.red{
+    right: 0px;
+    background-color: red;
+}
+#info_card.vert{
+    right: 0px;
+    background-color: green;
+}

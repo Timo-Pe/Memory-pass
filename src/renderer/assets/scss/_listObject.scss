@@ -1,0 +1,44 @@
+//---------------------Liste des fiches enregistrés--------------
+#list-object{
+    ul{
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        height: 390px;
+        align-items: flex-end;
+    }
+
+    .object{
+        background-color: #fff;
+        width: 488px;
+        height: 46px;
+        box-sizing: border-box;
+        min-height: 46px;
+        list-style-type: none;
+        margin-bottom: 20px;
+        display: flex;
+        padding-left:22px;
+        box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.20);
+        color: black;
+        text-decoration:none;
+
+        transition: background-color 2s;
+
+    
+        .name_object{
+            display: inline-block;
+            margin:auto;
+        }
+        .id_object{
+            display: inline-block;
+            margin-top : 14px;
+        }
+    }
+    .object:hover{
+        background-color: #719ECE;
+
+        }
+    .object:active{
+            box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.20);
+            }
+}

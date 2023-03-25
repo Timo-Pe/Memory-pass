@@ -1,10 +1,34 @@
-# Memory-pass
+# memory-pass
 
-## Presentation
-Memory-pass est une application desktop qui permet d’enregistrer les mots de passe que nous utilisons aux quotidiens de manière sécurisé. 
+A minimal Electron application with TypeScript
 
-## Technologies 
-- HTML / CSS
-- Préprocesseur SASS
-- Javascript Vanilla
-- Electron JS
+## Recommended IDE Setup
+
+- [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
+## Project Setup
+
+### Install
+
+```bash
+$ npm install
+```
+
+### Development
+
+```bash
+$ npm run dev
+```
+
+### Build
+
+```bash
+# For windows
+$ npm run build:win
+
+# For macOS
+$ npm run build:mac
+
+# For Linux
+$ npm run build:linux
+```
